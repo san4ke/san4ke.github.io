@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+    <meta charset="utf-8" >
+    <title>Order Pizza Firm</title>
+    <link rel="stylesheet" type="text/css" href="LANGCAY_IMAGES_ITAD/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Merriweather+Sans:wght@300&family=Signika:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<img src="LANGCAY_IMAGES_ITAD/cluckin bell.jpg">
+
+	<div class="content">
+		
+		<h2>Order Form</h2>
+		<br>
+		<h3>Full Name</h3>
+		<form><input name="fullname" type="text" placeholder="Input your name here"/> </form>
+		<br>
+		<h3>Complete Address</h3>
+		<form><input name="address" type="text" placeholder="Input your address"/> </form>
+		<br>
+		<h3>Contact Number</h3>
+		<form><input name="contact" type="text" placeholder="Input your contact number here"/> </form>
+		<br>
+		<h3>Email Address</h3>
+		<form><input name="email" type="text" placeholder="Input your email address here" /> </form>
+		<br>
+		<h3>How to get there</h3>
+		<textarea name="description" cols="30" rows="10" minlength="15" required placeholder="Input your description here"></textarea>
+
+		<!-- order details -->
+
+		<h2>Order Form</h2>
+		<br>
+		<h3>Start your order:</h3>
+		<label><input type="checkbox" name="burger"> Burger </label>
+		<br>
+		<label><input type="checkbox" name="fries"> Fries </label>
+		<br>
+		<label><input type="checkbox" name="pasta"> Pasta </label>
+		<br>
+		<label><input type="checkbox" name="drinks"> Beverage</label>
+		<br>
+
+		<h3>Build your burger:</h3>
+		<br>
+		<input type="radio"  name="BurgerAdd" value="single">
+		<label for="burgeradd">Single Patty</label>
+		<br>
+		<input type="radio"  name="BurgerAdd" value="double">
+		<label for="burgeradd">Double Patty</label>
+		<br>
+
+
+		<h3>Burger Veggies:</h3>
+		<br>
+		<label><input type="checkbox" name="lettuce"> Lettuce </label>
+		<br>
+		<label><input type="checkbox" name="tomato"> Tomato </label>
+		<br>
+		<label><input type="checkbox" name="pickles"> Pickles </label>
+		<br>
+		<label><input type="checkbox" name="onion"> Onion </label>
+		<br>
+		<label><input type="checkbox" name="cheese"> Cheese </label>
+		<br>
+		<label><input type="checkbox" name="coleslaw"> Coleslaw </label>
+		<br>
+		<label><input type="checkbox" name="bacon"> Bacon </label>
+
+		<h3>Type of Bun:</h3>
+
+		<input type="radio" id="white" name="bun" >
+  		<label for="white">White Bun</label><br>
+  		<input type="radio" id="wheat" name="bun" >
+  		<label for="wheat">Wheat Bun</label><br>
+
+		<h3>Quantity</h3>
+		<input type="number" size="2" >
+
+		<h2>Fries</h2>
+		<br>
+		<h3>Size:</h3>
+  		<input type="radio" id="small" name="fries" >
+  		<label for="small">Small</label><br>
+  		<input type="radio" id="medium" name="fries" >
+  		<label for="medium">Medium</label><br>
+  		<input type="radio" id="large" name="fries" >
+  		<label for="large">Large</label>
+  		<br>
+  		<h3>Flavor:</h3>
+		<select name="flavor" id="flavor" size="1">
+		<option value="barbeque">Barbeque</option>
+		<option value="cheese">Cheese</option>
+		<option value="sourcream">Sour and Cream</option>
+		</select>
+		<br>	
+		<h3>Quantity</h3>
+		<input type="number" size="2" >
+		<br>
+
+		<h2>Pasta</h2>
+
+		<h3>Sauce:</h3>
+		<select name="flavor" id="flavor" size="1">
+		<option value="carbonara">Carbonara</option>
+		<option value="pesto">Pesto</option>
+		<option value="sourcream">Sour and Cream</option>
+		</select>
+
+		<h3>Add ons:</h3>
+		<label><input type="checkbox" name="cheese"> Extra Cheese </label>
+		<br>
+		<label><input type="checkbox" name="sauce"> Extra Sauce </label>
+		<br>
+
+		<h3>Other Add-ons</h3>
+		<input type="text" size="15" >
+
+		<br>
+
+		<h2>Drinks</h2>
+
+		<h3>Select your drink:</h3>
+		<select name="flavor" id="flavor" size="1">
+		<option value="soda">Soda</option>
+		<option value="beer">Beer</option>
+		<option value="icedtea">Iced Tea</option>
+		</select>
+
+		<h3>Size:</h3>
+		<input type="radio" id="small" name="drink" >
+  		<label for="small">Small</label><br>
+  		<input type="radio" id="medium" name="drink" >
+  		<label for="medium">Medium</label><br>
+  		<input type="radio" id="large" name="drink" >
+  		<label for="large">Large</label>
+
+  		<h2>Delivery Options:</h2>
+  		<input type="radio" id="pickup" name="delivery" >
+  		<label for="pickup">Pick-up</label><br>
+  		<input type="radio" id="cod" name="delivery" >
+  		<label for="cod">Cash on Delivery</label><br>
+
+  		<h2>Feedback</h2>
+  		<textarea name="feedback" placeholder="Place your feedback here" cols="35" rows="10" minlength="300" maxlength="500" required></textarea>
+  		<br>
+  		<input type="submit" id="btn1" value="Submit Form">
+		<input type="reset" id="btn1" value="Clear Form">
+    </div>
+
+</body>
+</html>
